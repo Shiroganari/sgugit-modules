@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компетенции</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <!-- COMPETENCE -->
+    <section class="competence">
+
+        <div class="competence-header">
+            <h1 class="competence-header__title">Компетенции</h1>
+        </div> <!-- /.competence-header -->
+
+        <div class="competence-menu">
+            <ul class="competence-menu__list">
+                <li class="ccompetence-menu__item">
+                    <a class="competence-menu__link active" href="#competence-all">Компетенции</a>
+                </li>
+                <li class="competence-menu__item">
+                    <a class="competence-menu__link" href="#competence-codes">Коды компетенций</a>
+                </li>
+                <li class="competence-menu__item">
+                    <a class="competence-menu__link" href="#competence-content">Содержание компетенций</a>
+                </li>
+                <li class="competence-menu__item">
+                    <a class="competence-menu__link" href="#competence-results">Результаты компетенций</a>
+                </li>
+                <li class="competence-menu__item">
+                    <a class="competence-menu__link" href="#competence-types">Типы компетенций</a>
+                </li>
+            </ul>
+        </div> <!-- /.competence-menu -->
+
+        <div class="competence-tools">
+            <a class="competence-tools__add button" id="showPopup">Добавить</a>
+
+            <form class="competence-tools__form" action="">
+                <label class="competence-tools__label"for="search">Поиск:</label>
+                <input class="competence-tools__input type="text">
+                <svg class="competence-tools__icon" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 194 186">
+                    <path d="M40 40.6c-4.1 4-9.8 6.5-16 6.5-12.7 0-23-10.3-23-23s10.3-23 23-23 23 10.3 23 23c0 4.4-1.2 8.5-3.4 12l.1.1 18.9 18.9c.8.8-.1 2.9-1.9 4.7h0c-1.8 1.8-4 2.7-4.7 1.9l-19-19" 
+                    stroke="#6B6C6E" stroke-width="2" fill="none" fill-rule="evenodd"/>
+                </svg>
+            </form>
+        </div> <!-- /.competence-tools -->
+
+        <div class="competence-main">
+
+            <!-- Секция "Компетенции" -->
+            <div class="competence-main__all" id="competence-all">
+                <table class="table-competence" id="table-all">
+                    <thead class="table-competence__header">
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">№</td>
+                            <td class="table-competence__code">Код компетенции</td>
+                            <td class="table-competence__content">Содержание формулируемой компетенции</td>
+                            <td class="table-competence__actions">Действия</td>
+                        </tr>
+                    </thead>
+
+                    <tr class="table-competence__row" style="background-color: #fff;">
+                        <td colspan="5" style="text-align: center; padding: 5px 0;">общекультурные компетенции</td>
+                    </tr>
+
+                    <tbody class="table-competence__body">
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">1</td>
+                            <td class="table-competence__code">ОК-1</td>
+                            <td class="table-competence__content">способность к абстрактному мышлению, анализу, синтезу</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                                <a class="table-competence__delete" href="#">Удалить</a>
+                            </td>
+                        </tr>
+
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">2</td>
+                            <td class="table-competence__code">ОК-2</td>
+                            <td class="table-competence__content">способность проводить обоснование состава, характеристик и функциональных возможностей систем и средств обеспечения информационной безопасности объектов защиты на основе российских и международных стандартов</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                                <a class="table-competence__delete" href="#">Удалить</a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tr class="table-competence__row" style="background-color: #fff;">
+                        <td colspan="5" style="text-align: center; padding: 5px 0;">профессиональные компетенции</td>
+                    </tr>
+
+                    <tbody class="table-competence__body">
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">2</td>
+                            <td class="table-competence__code">ОК-2</td>
+                            <td class="table-competence__content">способность проводить обоснование состава, характеристик и функциональных возможностей систем и средств обеспечения информационной безопасности объектов защиты на основе российских и международных стандартов</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                                <a class="table-competence__delete" href="#">Удалить</a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div> <!-- /.competence-main__all -->
+
+            <!-- Секция "Коды компетенций" -->
+            <div class="competence-main__codes" id="competence-codes">
+                <table class="table-competence" id="table-codes" name="tab1">
+                    <thead class="table-competence__header">
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">№</td>
+                            <td class="table-competence__code">Код компетенции</td>
+                            <td class="table-competence__names">Наименование</td>
+                            <td class="table-competence__actions">Действия</td>
+                        </tr>
+                    </thead>
+
+                    <tbody class="table-competence__body">
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">1</td>
+                            <td class="table-competence__code">ОК-1</td>
+                            <td class="table-competence__names">ОК-1</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                            </td>
+                        </tr>
+
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">2</td>
+                            <td class="table-competence__code">ОК-2</td>
+                            <td class="table-competence__names">ОК</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                            </td>
+                        </tr>
+
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">3</td>
+                            <td class="table-competence__code">МЛ-9</td>
+                            <td class="table-competence__names">МЛ</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                            </td>
+                        </tr>
+
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">4</td>
+                            <td class="table-competence__code">МЛ-9</td>
+                            <td class="table-competence__names">МЛ</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                            </td>
+                        </tr>
+
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">5</td>
+                            <td class="table-competence__code">МЛ-9</td>
+                            <td class="table-competence__names">МЛ</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- /.competence-main__codes-->
+
+            <!-- Секция "Содержание компетенций" -->
+            <div class="competence-main__content" id="competence-content">
+                <table class="table-competence" id="table-content">
+                    <thead class="table-competence__header">
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">№</td>
+                            <td class="table-competence__content">Содержание формулируемой компетенции</td>
+                            <td class="table-competence__names">Наименование</td>
+                            <td class="table-competence__actions">Действия</td>
+                        </tr>
+                    </thead>
+
+                    <tbody class="table-competence__body">
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">1</td>
+                            <td class="table-competence__content">способность к абстрактному мышлению, анализу, синтезу</td>
+                            <td class="table-competence__names">анализ</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                            </td>
+                        </tr>
+
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">2</td>
+                            <td class="table-competence__content">способность проводить обоснование состава, характеристик и функциональных возможностей систем и средств обеспечения информационной безопасности объектов защиты на основе российских и международных стандартов</td>
+                            <td class="table-competence__names">информационная безопасность</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                            </td>
+                        </tr>
+
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">3</td>
+                            <td class="table-competence__content">способность к абстрактному мышлению, анализу, синтезу</td>
+                            <td class="table-competence__names">синтез</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- /.competence-main__content -->
+
+            <!-- Секция "Результаты компетенций" -->
+            <div class="competence-main__results" id="competence-results">
+                <table class="table-competence" id="table-results">
+                    <thead class="table-competence__header">
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">№</td>
+                            <td class="table-competence__results">Образовательные результаты</td>
+                            <td class="table-competence__names">Наименование</td>
+                            <td class="table-competence__actions">Действия</td>
+                        </tr>
+                    </thead>
+
+                    <tbody class="table-competence__body">
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">1</td>
+                            <td class="table-competence__results">
+                                <span class="table-competence__graduate">Выпускник знает: </span>
+                                основные вопросы современной теории нормативных документов
+                                <span class="table-competence__graduate">Выпускник умеет: </span>
+                                применять отечественные и зарубежные стандарты по обеспечению информационной безопасности
+                                <span class="table-competence__graduate">Выпускник владеет: </span>
+                                методикой формирования комплексных мер по защите информации
+                            </td>
+                            <td class="table-competence__names">защита информации</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                            </td>
+                        </tr>
+
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">2</td>
+                            <td class="table-competence__results">
+                                <span class="table-competence__graduate">Выпускник знает: </span>
+                                основные вопросы современной теории нормативных документов
+                                <span class="table-competence__graduate">Выпускник умеет: </span>
+                                применять отечественные и зарубежные стандарты по обеспечению информационной безопасности
+                                <span class="table-competence__graduate">Выпускник владеет: </span>
+                                методикой формирования комплексных мер по защите информации
+                            </td>
+                            <td class="table-competence__names">информационная безопасность</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- /.competence-main__results -->
+
+            <!-- Секция "Типы компетенций" -->
+            <div class="competence-main__types" id="competence-types">
+                <table class="table-competence" id="table-types">
+                    <thead class="table-competence__header">
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">№</td>
+                            <td class="table-competence__types">Тип компетенции</td>
+                            <td class="table-competence__names">Наименование</td>
+                            <td class="table-competence__actions">Действия</td>
+                        </tr>
+                    </thead>
+
+                    <tbody class="table-competence__body">
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">1</td>
+                            <td class="table-competence__types">общекультурные</td>
+                            <td class="table-competence__names">общекультурные</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                            </td>
+                        </tr>
+
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">2</td>
+                            <td class="table-competence__types">общепрофессиональные</td>
+                            <td class="table-competence__names">общепрофессиональные</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                            </td>
+                        </tr>
+
+                        <tr class="table-competence__row">
+                            <td class="table-competence__number">3</td>
+                            <td class="table-competence__types">профессиональные</td>
+                            <td class="table-competence__names">профессиональные</td>
+                            <td class="table-competence__actions">
+                                <a class="table-competence__edit" href="#">Изменить</a> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- /.competence-main__types -->
+        </div> <!-- /.competence-main -->
+    </section>
+    <!-- COMPETENCE END -->
+
+    <!-- POPUP-ОКНА -->
+    <div class="popup-add" id="popup-all">
+        <div class="popup-add__body">
+            <div class="popup-add__content">
+                <div class="popup-add__title">Добавить: компетенция</div>
+                <a class="popup-add__close" href="#"></a>
+
+                <div class="popup-modes separate-item">
+                    <span class="popup-modes__title">Режим заполнения:</span>
+                    <button class="popup-modes__btn" id="manually">Только вручную</button>
+                    <button class="popup-modes__btn" id="from-list">Только из списка</button>
+                    <button class="popup-modes__btn" id="mixed">Смешанный</button>
+                </div>
+
+                <div class="popup-add__item separate-item">
+                    <label class="popup-add__label">
+                        <span class="popup-add__text">Наименование:</span>
+                        <input class="popup-add__input" type="text">
+                    </label>
+                </div>
+
+                <div class="popup-add__item separate-item">
+                    <label class="popup-add__label popup-add__label--indent">
+                        <p class="popup-add__remark">введите текст вручную</p>
+                        <span class="popup-add__text">Тип компетенции:</span>
+                        <input class="popup-add__input" type="text">
+                    </label>
+
+                    <label class="popup-add__label popup-add__label--disabled">
+                        <span class="popup-add__text">Наименование:</span>
+                        <input class="popup-add__input" type="text" disabled>
+                    </label>
+
+                    <label class="popup-add__label popup-add__label--indent popup-add__label--disabled">
+                        <div class="empty-space"></div>
+                        <p class="popup-add__remark">или выберите код компетенции из списка существующих</p>
+                        <select class="popup-add__select" disabled>
+                            <option disabled selected>выбрать</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="popup-add__item separate-item">
+                    <label class="popup-add__label popup-add__label--indent">
+                        <p class="popup-add__remark">введите текст вручную</p>
+                        <span class="popup-add__text">Код компетенции:</span>
+                        <input class="popup-add__input" type="text">
+                    </label>
+
+                    <label class="popup-add__label popup-add__label--disabled">
+                        <span class="popup-add__text">Наименование:</span>
+                        <input class="popup-add__input" type="text" disabled>
+                    </label>
+
+                    <label class="popup-add__label popup-add__label--indent popup-add__label--disabled">
+                        <div class="empty-space"></div>
+                        <p class="popup-add__remark">или выберите код компетенции из списка существующих</p>
+                        <select class="popup-add__select" disabled>
+                            <option disabled selected>выбрать</option>
+                        </select>
+                    </label>
+
+                    <label class="popup-add__label popup-add__label--indent popup-add__label--disabled">
+                        <div class="empty-space"></div>
+                        <p class="popup-add__remark">(дополнительно) отфильтруйте список кодов компетенций по наименованию</p>
+                        <select class="popup-add__select" disabled>
+                            <option disabled selected>выбрать</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="popup-add__item">
+                    <label class="popup-add__label popup-add__label--indent">
+                        <p class="popup-add__remark">введите текст вручную</p>
+                        <span class="popup-add__text">Содержание компетенции:</span>
+                        <textarea class="popup-add__textarea" type="text"></textarea>
+                    </label>
+
+                    <label class="popup-add__label popup-add__label--disabled">
+                        <span class="popup-add__text">Наименование:</span>
+                        <input class="popup-add__input" type="text" disabled>
+                    </label>
+
+                    <label class="popup-add__label popup-add__label--indent popup-add__label--disabled no-empty">
+                        <p class="popup-add__remark">или выберите код компетенции из списка существующих</p>
+                        <select class="popup-add__select" disabled>
+                            <option disabled selected>выбрать</option>
+                        </select>
+                    </label>
+
+                    <label class="popup-add__label popup-add__label--indent popup-add__label--disabled no-empty">
+                        <p class="popup-add__remark">(дополнительно) отфильтруйте список кодов компетенций по наименованию</p>
+                        <select class="popup-add__select" disabled>
+                            <option disabled selected>выбрать</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="popup-add__buttons">
+                    <button class="popup-add__btn button close-btn"">Сохранить и закрыть</button>
+                    <button class="popup-add__btn button save-btn">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- ./popup-all -->
+
+    <div class="popup-add" id="popup-codes">
+        <div class="popup-add__body">
+            <div class="popup-add__content">
+                <div class="popup-add__title">Добавить: код компетенции</div>
+                <a class="popup-add__close" href="#"></a>
+
+                <label class="popup-add__label">
+                    <span class="popup-add__text">Наименование:</span>
+                    <input class="popup-add__input" type="text">
+                </label>
+
+                <label class="popup-add__label">
+                    <span class="popup-add__text">Код компетенции:</span>
+                    <input class="popup-add__input" type="text"></input>
+                </label>
+
+                <div class="popup-add__buttons">
+                    <button class="popup-add__btn button close-btn">Сохранить и закрыть</button>
+                    <button class="popup-add__btn button save-btn">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- ./popup-codes -->
+
+    <div class="popup-add" id="popup-content">
+        <div class="popup-add__body">
+            <div class="popup-add__content">
+                <div class="popup-add__title">Добавить: содержание компетенции</div>
+                <a class="popup-add__close" href="#"></a>
+
+                <label class="popup-add__label">
+                    <span class="popup-add__text">Наименование:</span>
+                    <input class="popup-add__input" type="text">
+                </label>
+
+                <label class="popup-add__label">
+                    <span class="popup-add__text">Содержание компетенции:</span>
+                    <textarea class="popup-add__textarea" type="text"></textarea>
+                </label>
+
+                <div class="popup-add__buttons">
+                    <button class="popup-add__btn button close-btn">Сохранить и закрыть</button>
+                    <button class="popup-add__btn button save-btn">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- ./popup-content -->
+
+    <div class="popup-add" id="popup-results">
+        <div class="popup-add__body">
+            <div class="popup-add__content">
+                <div class="popup-add__title">Добавить: образовательные результаты</div>
+                <a class="popup-add__close" href="#"></a>
+
+                <label class="popup-add__label">
+                    <span class="popup-add__text">Наименование:</span>
+                    <input class="popup-add__input" type="text">
+                </label>
+
+                <label class="popup-add__label">
+                    <span class="popup-add__text">Выпускник знает:</span>
+                    <textarea class="popup-add__textarea" type="text"></textarea>
+                </label>
+
+                <label class="popup-add__label">
+                    <span class="popup-add__text">Выпускник умеет:</span>
+                    <textarea class="popup-add__textarea" type="text"></textarea>
+                </label>
+
+                <label class="popup-add__label">
+                    <span class="popup-add__text">Выпускник владеет:</span>
+                    <textarea class="popup-add__textarea" type="text"></textarea>
+                </label>
+
+                <div class="popup-add__buttons">
+                    <button class="popup-add__btn button close-btn">Сохранить и закрыть</button>
+                    <button class="popup-add__btn button save-btn">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- ./popup-results -->
+
+    <div class="popup-add" id="popup-types">
+        <div class="popup-add__body">
+            <div class="popup-add__content">
+                <div class="popup-add__title">Добавить: тип компетенции</div>
+                <a class="popup-add__close" href="#"></a>
+
+                <label class="popup-add__label">
+                    <span class="popup-add__text">Наименование:</span>
+                    <input class="popup-add__input" type="text">
+                </label>
+
+                <label class="popup-add__label">
+                    <span class="popup-add__text">Тип компетенции:</span>
+                    <input class="popup-add__input" type="text"></input>
+                </label>
+
+                <label class="popup-add__label">
+                    <span class="popup-add__text">Тип компетенции <br>(в род. падеже):</span>
+                    <input class="popup-add__input" type="text"></input>
+                </label>
+
+                <div class="popup-add__buttons">
+                    <button class="popup-add__btn button close-btn">Сохранить и закрыть</button>
+                    <button class="popup-add__btn button save-btn">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- ./popup-types -->
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
