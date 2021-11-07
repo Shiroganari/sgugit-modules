@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭИОС | Категории</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/layouts/feedback.css">
+    <link rel="stylesheet" href="styles/components/popup.css">
+    <link rel="stylesheet" href="styles/components/toggle-button.css">
+</head>
+<body>
+
+    <section class="feedback feedback-categories">
+        <div class="container">
+            <div class="feedback__content">
+                <div class="feedback__title">Категории</div>
+
+                <div class="feedback-filters">
+                    <div class="feedback-filters__title">Фильтры</div>
+
+                    <div class="feedback-filters__content">
+                        <label class="feedback-filters__label" for="user-type">Тип пользователя:</label>
+                        <select class="feedback-filters__select" type="select" id="user-type">
+                            <option class="feedback-filters__option" value="all">Все</option>
+                            <option class="feedback-filters__option" value="student">Студент</option>
+                            <option class="feedback-filters__option" value="teacher">Преподаватель</option>
+                        </select>
+                    </div>
+
+                    <button class="feedback-filters__button button" id="filters-button">Применить</button>
+                </div>
+
+                <table class="feedback-table feedback-categories__table" id="categories-table">
+                    <thead class="feedback-table__header">
+                        <tr>
+                            <td>Тип пользователя</td>
+                            <td>Название</td>
+                            <td>Количество тем</td>
+                            <td>Действия</td>
+                        </tr>
+                    </thead>
+
+                    <tbody class="feedback-table__body">
+                        <tr class="feedback-table__row" data-user-type="student">
+                            <td class="feedback-table__type">Студент</td>
+                            <td class="feedback-table__title">Предложение</td>
+                            <td class="feedback-table__themes-count">15</td>
+                            <td class="feedback-table__actions">
+                                <a class="feedback-table__edit" href="#">Удалить</a>
+                                <a class="feedback-table__edit" href="#">Редактировать</a>
+                            </td>
+                        </tr>
+
+                        <tr class="feedback-table__row" data-user-type="teacher">
+                            <td class="feedback-table__type">Преподаватель</td>
+                            <td class="feedback-table__title">Предложение</td>
+                            <td class="feedback-table__themes-count">5</td>
+                            <td class="feedback-table__actions">
+                                <a class="feedback-table__edit" href="#">Удалить</a>
+                                <a class="feedback-table__edit" href="#">Редактировать</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button class="feedback__button button" id="button-entry">Добавить</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPUP-CALL -->
+    <div class="popup popup-category" id="popup-category">
+        <div class="popup__container">
+            <div class="popup__content">
+                <p class="popup__title">Добавление категории</p>
+
+                <form class="popup-form" action="#">
+                    <div class="popup-form__item">
+                        <label class="popup-form__label" for="popup__user-type">Тип пользователя: </label>
+                        <select class="popup-form__select feedback-filters__select" type="select" id="popup__user-type">
+                            <option class="popup-form__option feedback-filters__option" value="student">Студент</option>
+                            <option class="popup-form__option feedback-filters__option" value="teacher">Преподаватель</option>
+                        </select>
+                    </div>
+                    <div class="popup-form__item">
+                        <label class="popup-form__label" for="popup__category-title">Название категории: </label>
+                        <input class="popup-form__input" id="popup__category-title" type="text">
+                    </div>
+                    <button class="button button--blue" id="popup__new-entry">Отправить</button>
+                </form>
+
+                <div class="toggle-button popup-close active" id="popup-close">
+                    <div class="toggle-button__item"></div>
+                    <div class="toggle-button__item"></div>
+                    <div class="toggle-button__item"></div>
+                </div>
+            </div> <!-- /.popup__content -->
+        </div> <!-- /.popup__container -->
+    </div>
+    <!-- POPUP-CALL END -->
+
+    <script src="scripts/categories.js"></script>
+</body>
+</html>

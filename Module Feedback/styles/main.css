@@ -1,0 +1,52 @@
+/***********/
+/* GENERAL */
+/***********/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.button {
+    display: inline-block;
+    padding: 9px 25px;
+    color: #fff;
+    background-color: #f18d1e;
+    border: none;
+    border-radius: 13px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover,
+.button:active {
+    background-color: #f79d36;
+}
